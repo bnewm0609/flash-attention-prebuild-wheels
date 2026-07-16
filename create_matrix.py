@@ -9,7 +9,7 @@ LINUX_MATRIX = {
     "flash-attn-version": [
         # "2.6.3",
         # "2.7.4",
-        # "2.8.3",
+        "2.8.3",
     ],
     "python-version": [
         # "3.10",
@@ -26,16 +26,16 @@ LINUX_MATRIX = {
         # "2.7.1",
         # "2.8.0",
         # "2.9.1",
-        "2.10.0",
-        # "2.11.0",
+        # "2.10.0",
+        "2.11.0",
         # "2.12.1",
         # "2.13.0",
     ],
     "cuda-version": [
         # "12.4",
         # "12.6",
-        "12.8",
-        # "12.9",
+        # "12.8",
+        "12.9",
         # "13.0",
         # "13.2",
     ],
@@ -307,11 +307,11 @@ def main():
     print(
         json.dumps(
             {
-                "linux": False,
-                # "linux": LINUX_MATRIX,
+                # "linux": False,
+                "linux": LINUX_MATRIX,
                 #
-                # "linux_arm64": False,
-                "linux_arm64": LINUX_ARM64_MATRIX,
+                "linux_arm64": False,
+                # "linux_arm64": LINUX_ARM64_MATRIX,
                 #
                 "linux_self_hosted": False,
                 # "linux_self_hosted": LINUX_SELF_HOSTED_MATRIX,
